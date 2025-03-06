@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pricings",
+  "info": {
+    "singularName": "pricing",
+    "pluralName": "pricings",
+    "displayName": "Pricing",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    },
+    "description": {
+      "type": "blocks",
+      "required": false
+    },
+    "dataPricing": {
+      "type": "json",
+      "required": false
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "disccount": {
+      "type": "decimal",
+      "required": false
+    },
+    "gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "markdown": {
+      "type": "richtext"
+    }
+  }
+}
